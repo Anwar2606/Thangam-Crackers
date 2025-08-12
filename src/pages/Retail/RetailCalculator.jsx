@@ -56,26 +56,24 @@ const RetailCaluclator = () => {
 
 
 
-  useEffect(() => {
-  const fetchProducts = async () => {
-    const productsCollectionRef = collection(db, 'products');
-    const q = query(productsCollectionRef, where('bill', '==', 'Retail')); // 👈 filter added
-
-    try {
-      const querySnapshot = await getDocs(q);
-      const fetchedProducts = querySnapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-      setProducts(fetchedProducts);
-    } catch (error) {
-      console.error('Error fetching products: ', error);
-    }
-  };
-
-  fetchProducts();
-}, []);
-
+  
+    useEffect(() => {
+      const fetchProducts = async () => {
+        const productsCollectionRef = collection(db, 'products');
+        try {
+          const querySnapshot = await getDocs(productsCollectionRef);
+          const fetchedProducts = querySnapshot.docs.map(doc => ({
+            id: doc.id,
+            ...doc.data(),
+          }));
+          setProducts(fetchedProducts);
+        } catch (error) {
+          console.error('Error fetching products: ', error);
+        }
+      };
+      fetchProducts();
+    }, []);
+  
 
 
   useEffect(() => {

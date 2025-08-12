@@ -23,9 +23,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       <ul>
         <li className="sidebar-header">
           {isOpen ? (
-            'Thangam Crackers'
+            'Yellow Crackers'
           ) : (
-            <img src={Logo} alt="PCW Logo" className="collapsed-logo" />
+            <img  alt="PCW Logo" className="collapsed-logo" />
           )}
         </li>
 
