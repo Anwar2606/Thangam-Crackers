@@ -735,17 +735,15 @@ const CustomerCopy = async () => {
    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", 
                       "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-  const headerTable = [
-    ['T.M.CRACKERS PARK', '', 'TAX INVOICE'],
-    ['Address:1/90Z6, Balaji Nagar, Anna Colony', '', 'CUSTOMER COPY'],
-    ['Vadamamalapuram ', '', `Invoice Number: ${invoiceNumber}`],
-    ['Thiruthangal - 626130', '', `Date: ${selectedDate.getDate().toString().padStart(2, '0')}-${monthNames[selectedDate.getMonth()]}-${selectedDate.getFullYear()}`],
-    ['Sivakasi (Zone)', '', 'GSTIN: 33AAVFT8036C1ZZ'],
-    ['Virudhunagar (Dist)', '', ''],
-    ['State: 33-Tamil Nadu', '', ''],
-    ['Phone number: 97514 87277 / 95853 58106', '', '']
-   
- ];
+    const headerTable = [
+      ['THANGAM CRACKERS', '', 'Estimate For Wholesale'],
+      ['Address:197/E, Alamarathupatti Road,', '',`Estimate Number: ${invoiceNumber}` ],
+      ['Thiruthangal - 626130', '',`Date: ${selectedDate.getDate().toString().padStart(2, '0')}-${monthNames[selectedDate.getMonth()]}-${selectedDate.getFullYear()}` ],
+      ['Sivakasi (Zone)', '', ''],
+      ['Virudhunagar (Dist)', '', ''],
+      ['State: 33-Tamil Nadu', '', ''],
+      ['Phone number: 9042545685', '', '']
+    ];
  
  const headerStartY = 14;
  
