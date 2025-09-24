@@ -388,11 +388,11 @@ const generatePDFPage = (doc, copyType, invoiceNumber) => {
                       "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   const headerTable = [
-     ['THANGAM CRACKERS', '', 'TAX INVOICE'],
+     ['SRI LAKSHMI AGENCY', '', 'TAX INVOICE'],
     ['Address:197/E, Alamarathupatti Road,', '',`${copyType}` ],
     ['Thiruthangal - 626130', '',`Estimate Number: ${invoiceNumber}` ],
     ['Sivakasi (Zone)', '', `Date: ${selectedDate.getDate().toString().padStart(2, '0')}-${monthNames[selectedDate.getMonth()]}-${selectedDate.getFullYear()}`],
-    ['Virudhunagar (Dist)', '', ''],
+    ['Virudhunagar (Dist)', '', 'GSTIN: 33ACVFS9302G1ZT'],  
     ['State: 33-Tamil Nadu', '', ''],
     ['Phone number: 9042545685', '', '']
   ];
@@ -732,11 +732,11 @@ const CustomerCopy = async () => {
                       "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   const headerTable = [
-  ['THANGAM CRACKERS', '', 'TAX INVOICE'],
+  ['SRI LAKSHMI AGENCY', '', 'TAX INVOICE'],
     ['Address:197/E, Alamarathupatti Road,', '','CUSTOMER COPY' ],
     ['Thiruthangal - 626130', '',`Estimate Number: ${invoiceNumber}` ],
     ['Sivakasi (Zone)', '', `Date: ${selectedDate.getDate().toString().padStart(2, '0')}-${monthNames[selectedDate.getMonth()]}-${selectedDate.getFullYear()}`],
-    ['Virudhunagar (Dist)', '', ''],
+    ['Virudhunagar (Dist)', '', 'GSTIN: 33ACVFS9302G1ZT'],
     ['State: 33-Tamil Nadu', '', ''],
     ['Phone number: 9042545685', '', '']
    
