@@ -199,13 +199,7 @@ doc.rect(14, headerTableStartY, pageWidth - 28, headerTableEndY - headerTableSta
 
 
   const customerAccountTable = [
-    ['TO', '', 'Account Details', ''],
-    ['Name', clean(customerName), 'A/c Holder Name', 'RAJESH KANNAN'],
-    ['Address', clean(customerAddress), 'A/c Number', '33098100000505'],
-    ['State', clean(customerState), 'Bank Name', 'BANK OF BARODA'],
-    ['Phone', clean(customerPhoneNo), 'Branch', 'SIVAKASI'],
-    ['GSTIN', clean(customerGSTIN), 'IFSC Code', 'BARB0SIVAKA'],
-    ['PAN', clean(customerPan), '', '']
+   
   ];
 
   doc.autoTable({
